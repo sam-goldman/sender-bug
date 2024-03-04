@@ -8,7 +8,7 @@ contract CounterScript is Script {
     function setUp() public {}
 
     function run() public {
-        vm.broadcast(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266);
+        vm.prank(0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266);
         Counter counter = new Counter();
         console.log(address(counter));
     }
